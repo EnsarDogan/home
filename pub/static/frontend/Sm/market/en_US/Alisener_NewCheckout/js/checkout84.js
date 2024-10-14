@@ -2254,8 +2254,13 @@ function show_menu(obj, category_id) {
     document.getElementById("inp_knm_json").value = category_id;
 
     if (category_id == 402) {
-      ht1 = `<li>
-      <a style="font-weight:bold" href="https://vlaggenactie.nl/vlaggen.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/m/a/mastvlaggen_1_1.jpg" 		onmouseover="show_product_detail(this)">Vlaggen</a>
+      ht1 = `
+    <li>
+      <a href="https://vlaggenactie.nl/vlaggenmast.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/v/l/vlag_eigenformaat__3.jpg" onmouseover="show_product_detail(this)">Vlaggenmast</a>
+    </li>
+
+    <li>
+      <a href="https://vlaggenactie.nl/baniermast.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/v/l/vlag_eigenformaat__3.jpg" onmouseover="show_product_detail(this)">Baniermast</a>
     </li>
     
     <li>
@@ -2281,12 +2286,13 @@ function show_menu(obj, category_id) {
       <a href="https://vlaggenactie.nl/beachflags.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/e/beachflag_3.jpg" 
       	onmouseover="show_product_detail(this)">Beachflags</a>
     </li>
-    
-    <li>
+     <li>
       <a href="https://vlaggenactie.nl/raamvlag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/r/a/raamvlag_02_1_.jpg" 
       	onmouseover="show_product_detail(this)">Raamvlag</a>
     </li>
-    
+   `;
+
+      ht2 = `
     <li>
       <a href="https://vlaggenactie.nl/golfvlag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/g/o/golfvlag_15.jpg" 
       	onmouseover="show_product_detail(this)">Golfvlag</a>
@@ -2312,17 +2318,15 @@ function show_menu(obj, category_id) {
     </li>
     <li>
       <a href="https://vlaggenactie.nl/mini-beachflag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/m/i/minibeachvlag_0123.jpg" onmouseover="show_product_detail(this)">Mini Beachflag</a>
-    </li>`;
-
-      ht2 = `<li>
-      <a style="font-weight:bold" href="https://vlaggenactie.nl/vlaggen/vlaggenaccessoire.html" data-img="" onmouseover="show_product_detail(this)">Vlaggen Accessories</a>
     </li>
-    <li>
+     <li>
       <a href="https://vlaggenactie.nl/gevelstokhouder-zwart.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/g/e/gevelstokhouder_zwart_01.jpeg" onmouseover="show_product_detail(this)">Gevelstokhouder zwart</a>
     </li>
-    <li>
+     <li>
       <a href="https://vlaggenactie.nl/gevelstok-zwart.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/g/e/gevelstok_zwart_01.jpeg" onmouseover="show_product_detail(this)">Gevelstok zwart</a>
-    </li>
+    </li>`;
+
+      ht3 = `   
     <li>
       <a href="https://vlaggenactie.nl/raamvlag-stok-en-zuignap.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/cache/188088a9a1214c834ad18b1117e66ad8/r/a/raamvlag_stok_zuignap_1.jpg" onmouseover="show_product_detail(this)">Raamvlag stok en zuignap</a>
     </li>
@@ -2347,37 +2351,36 @@ function show_menu(obj, category_id) {
     <li>
       <a href="https://vlaggenactie.nl/banierhouderset-oranje.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/1/e/1e1215ff86810de0.jpg" onmouseover="show_product_detail(this)">Banierhouderset - Oranje</a>
     </li>
-    <li>
-      <a href="https://vlaggenactie.nl/banierhouder-verloopstuk-70-mm.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/9/4/944a6ffa6c09667f.jpg" onmouseover="show_product_detail(this)">Banierhouder verloopstuk 70 mm</a>
-    </li>
-    <li>
-      <a href="https://vlaggenactie.nl/beachpole.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/e/beachpole_1.jpg" onmouseover="show_product_detail(this)">Beachpole</a>
-    </li>
-    <li>
-      <a href="https://vlaggenactie.nl/grondpen-met-rotator.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/g/r/grondpen_1.jpg" onmouseover="show_product_detail(this)">Grondpen met rotator</a>
-    </li>
-    <li>
-      <a href="https://vlaggenactie.nl/flagfix.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/f/l/flagfix_1.jpg" onmouseover="show_product_detail(this)">Flagfix</a>
-    </li>
-    <li>
-      <a href="https://vlaggenactie.nl/rotator.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/r/o/rotator_1.jpg" onmouseover="show_product_detail(this)">Rotator</a>
-    </li>
-    <li>
-      <a href="https://vlaggenactie.nl/voetplaat-met-rotator.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/v/o/voetplaat_1.jpg" onmouseover="show_product_detail(this)">Voetplaat met rotator</a>
-    </li>
-    <li>
-      <a href="https://vlaggenactie.nl/waterzak.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/w/a/waterzak_2.jpeg" onmouseover="show_product_detail(this)">Waterzak</a>
-    </li>
-    <li>
-      <a href="https://vlaggenactie.nl/contragewicht.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/c/o/contragewicht_1.jpg" onmouseover="show_product_detail(this)">Contragewicht</a>
-    </li>
-    <li>
-      <a href="https://vlaggenactie.nl/vlaggen/vlaggenaccessoire.html" data-img="" onmouseover="show_product_detail(this)">Bekijk alles</a>
-    </li>`;
+   `;
 
-      ht3 = ``;
-
-      ht4 = ``;
+      ht4 = `
+  <li>
+    <a href="https://vlaggenactie.nl/banierhouder-verloopstuk-70-mm.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/9/4/944a6ffa6c09667f.jpg" onmouseover="show_product_detail(this)">Banierhouder verloopstuk 70 mm</a>
+  </li>
+  <li>
+    <a href="https://vlaggenactie.nl/beachpole.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/e/beachpole_1.jpg" onmouseover="show_product_detail(this)">Beachpole</a>
+  </li>
+  <li>
+    <a href="https://vlaggenactie.nl/grondpen-met-rotator.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/g/r/grondpen_1.jpg" onmouseover="show_product_detail(this)">Grondpen met rotator</a>
+  </li>
+  <li>
+    <a href="https://vlaggenactie.nl/flagfix.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/f/l/flagfix_1.jpg" onmouseover="show_product_detail(this)">Flagfix</a>
+  </li>
+  <li>
+    <a href="https://vlaggenactie.nl/rotator.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/r/o/rotator_1.jpg" onmouseover="show_product_detail(this)">Rotator</a>
+  </li>
+  <li>
+    <a href="https://vlaggenactie.nl/voetplaat-met-rotator.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/v/o/voetplaat_1.jpg" onmouseover="show_product_detail(this)">Voetplaat met rotator</a>
+  </li>
+  <li>
+    <a href="https://vlaggenactie.nl/waterzak.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/w/a/waterzak_2.jpeg" onmouseover="show_product_detail(this)">Waterzak</a>
+  </li>
+  <li>
+    <a href="https://vlaggenactie.nl/contragewicht.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/c/o/contragewicht_1.jpg" onmouseover="show_product_detail(this)">Contragewicht</a>
+  </li>
+  <li>
+    <a href="https://vlaggenactie.nl/vlaggen/vlaggenaccessoire.html" data-img="" onmouseover="show_product_detail(this)">Bekijk alles</a>
+  </li>`;
 
       ht5 = ``;
 
@@ -2388,7 +2391,7 @@ function show_menu(obj, category_id) {
       ht += "<div class='col-lg-2'>" + ht5 + "</div>";
 
       ht += `<div class='col-lg-2'>
-                            <img loading="lazy" id="img_1" src="https://vlaggenactie.nl/pub/media/catalog/product/v/l/vlag_eigenformaat__3.jpg">
+                            <img loading="lazy" id="img_1" src="https://vlaggenactie.nl/pub/media/catalog/product/v/l/vlag_eigenformaat__3.jpg" style="height: 200px;">
                             <br>
                             <br>
                             <a id="a_1">Vlag (Eigen Formaat)</a>
@@ -2597,6 +2600,597 @@ function show_menu(obj, category_id) {
         "<div class='col-lg-2'><img id='img_1'  loading='lazy'  src='" +
         domain +
         "pub/media/catalog/product/m/a/mastvlaggen_1_1.jpg' /><br><br><a id='a_1'>Mastvlag</a></div>";
+
+      document.getElementById("bottom_menu").innerHTML = ht;
+      document.getElementById("bottom_menu").style.display = "block";
+    } else if (category_id == 422) {
+      ht1 = `
+      <li>
+        <a href="https://vlaggenactie.nl/beachflags.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/e/beachflag_2.jpg" onmouseover="show_product_detail(this)">Beachflags</a>
+      </li>
+  
+      <li>
+        <a href="https://vlaggenactie.nl/mini-beachflag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/m/i/minibeachvlag_0123.jpg" onmouseover="show_product_detail(this)">Mini Beachflag</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/beachpole-small-inclusief-tas.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/e/beachpole.jpg" onmouseover="show_product_detail(this)">Beachpole Small inclusief tas</a>
+      </li>
+      
+     `;
+
+      ht2 = `
+    
+       <li>
+        <a href="https://vlaggenactie.nl/autosteun.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/a/u/autosteun.jpg" 
+          onmouseover="show_product_detail(this)">Autosteun</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/beachpole-large-inclusief-tas.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/e/beachpole_3.jpg" 
+          onmouseover="show_product_detail(this)">Beachpole Large inclusief tas</a>
+      </li>
+      
+      `;
+
+      ht3 = `
+      
+      <li>
+        <a href="https://vlaggenactie.nl/beachpole-medium-inclusief-tas.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/e/beachpole_2.jpg"
+           onmouseover="show_product_detail(this)">Beachpole Medium inclusief tas</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/wall-base.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/w/a/wall_base.jpg" 
+          onmouseover="show_product_detail(this)">Wall Base 90°</a>
+      </li>`;
+
+      ht4 = ``;
+
+      ht5 = ``;
+
+      ht += "<div class='col-lg-2'>" + ht1 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht2 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht3 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht4 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht5 + "</div>";
+
+      ht += `<div class='col-lg-2'>
+                              <img loading="lazy" id="img_1" src="https://vlaggenactie.nl/pub/media/catalog/product/b/e/beachflag_3.jpg">
+                              <br>
+                              <br>
+                              <a id="a_1">Beachflags</a>
+                          </div>`;
+
+      document.getElementById("bottom_menu").innerHTML = ht;
+      document.getElementById("bottom_menu").style.display = "block";
+    } else if (category_id == 444) {
+      ht1 = `
+      <li>
+        <a href="https://vlaggenactie.nl/decotex-uv.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/e/decotex_1.jpg" onmouseover="show_product_detail(this)">Decotex UV</a>
+      </li>
+  
+      <li>
+        <a href="https://vlaggenactie.nl/rollup-banners.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/r/o/roll-up_5_1.jpg" onmouseover="show_product_detail(this)">Rollup Banners</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/beachflags.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/e/beachflag_2.jpg" onmouseover="show_product_detail(this)">Beachflags</a>
+      </li>
+      
+     `;
+
+      ht2 = `
+     <li>
+        <a href="https://vlaggenactie.nl/spandoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/s/p/spandoek_5.jpg" onmouseover="show_product_detail(this)">Spandoek</a>
+      </li>
+      
+      <li>
+        <a href="https://vlaggenactie.nl/blackback-soft.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/l/blackback_soft_3_1_.jpg" 
+          onmouseover="show_product_detail(this)">Blackback Soft</a>
+      </li>
+        <li>
+        <a href="https://vlaggenactie.nl/flyers.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/f/l/flayer_3.jpg" 
+          onmouseover="show_product_detail(this)">Flyers</a>
+      </li>
+      
+      `;
+
+      ht3 = ` <li>
+        <a href="https://vlaggenactie.nl/forex.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/f/o/forex_3.jpg" 
+          onmouseover="show_product_detail(this)">Forex</a>
+      </li>
+      
+      <li>
+        <a href="https://vlaggenactie.nl/soundmesh.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/s/o/soundmesh_2_1.jpg"
+           onmouseover="show_product_detail(this)">Soundmesh</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/bouwhekdoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/o/bouwhekdoek_3.jpg" 
+          onmouseover="show_product_detail(this)">Bouwhekdoek</a>
+      </li>`;
+
+      ht4 = `<li>
+        <a href="https://vlaggenactie.nl/backlitdoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/a/backlitdoek_1_1.jpeg" 
+          onmouseover="show_product_detail(this)">Backlitdoek</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/dekostof.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/e/dekostof_6.jpg" 
+          onmouseover="show_product_detail(this)">Dekostof</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/spandoekframe.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/s/p/spandoekframe_2_1.jpg" 
+          onmouseover="show_product_detail(this)">Spandoekframe</a>
+      </li>`;
+
+      ht5 = `<li>
+        <a href="https://vlaggenactie.nl/bouwhekdoek-eigen-formaat.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/o/bouwhekdoek_4_1.jpg" 
+          onmouseover="show_product_detail(this)">Bouwhekdoek (eigen formaat)</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/parasol.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/p/a/parasol_1.jpg" 
+          onmouseover="show_product_detail(this)">Parasol</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/reclamebord.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/r/e/reclamebord_1_1.jpg" 
+          onmouseover="show_product_detail(this)">Reclamebord</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/mini-beachflag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/m/i/minibeachvlag_0123.jpg" 
+          onmouseover="show_product_detail(this)">Mini Beachflag</a>
+      </li>
+      `;
+
+      ht += "<div class='col-lg-2'>" + ht1 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht2 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht3 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht4 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht5 + "</div>";
+
+      ht += `<div class='col-lg-2'>
+                              <img loading="lazy" id="img_1" src="https://vlaggenactie.nl/pub/media/catalog/product/r/o/roll-up_5_1.jpg">
+                              <br>
+                              <br>
+                              <a id="a_1">Beurs &amp; Evenement</a>
+                          </div>`;
+
+      document.getElementById("bottom_menu").innerHTML = ht;
+      document.getElementById("bottom_menu").style.display = "block";
+    } else if (category_id == 443) {
+      ht1 = `
+      <li>
+        <a href="https://vlaggenactie.nl/zwart-wit-banner.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/z/w/zwart-wit-banner-printen.png" onmouseover="show_product_detail(this)">Zwart-wit banner</a>
+      </li>
+  
+      <li>
+        <a href="https://vlaggenactie.nl/rollup-banners.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/r/o/roll-up_5_1.jpg" onmouseover="show_product_detail(this)">Rollup Banners</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/plexiglas.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/p/l/plexiglas-2-logosuz.jpg" onmouseover="show_product_detail(this)">Plexiglas</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/naadloos-fotobehang.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/n/a/naadloos_fotobehang_1_1.jpg" onmouseover="show_product_detail(this)">Naadloos fotobehang</a>
+      </li>
+      
+     `;
+
+      ht2 = `
+     <li>
+        <a href="https://vlaggenactie.nl/blackback-soft.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/l/blackback_soft_3_1_.jpg" onmouseover="show_product_detail(this)">Blackback Soft</a>
+      </li>
+        <li>
+        <a href="https://vlaggenactie.nl/airtex.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/a/i/airtex_1.jpg" 
+          onmouseover="show_product_detail(this)">Airtex</a>
+      </li>
+     <li>
+        <a href="https://vlaggenactie.nl/soundmesh.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/s/o/soundmesh_2_1.jpg"
+           onmouseover="show_product_detail(this)">Soundmesh</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/aluminium-bord.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/a/l/aluminium_bord_1_1.jpg" 
+          onmouseover="show_product_detail(this)">Aluminium bord</a>
+      </li>
+      
+      `;
+
+      ht3 = ` <li>
+        <a href="https://vlaggenactie.nl/dekostof.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/e/dekostof_6.jpg" 
+          onmouseover="show_product_detail(this)">Dekostof</a>
+      </li>
+      
+      <li>
+        <a href="https://vlaggenactie.nl/decotex-uv.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/e/decotex_1.jpg" onmouseover="show_product_detail(this)">Decotex UV</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/backlitdoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/a/backlitdoek_1_1.jpeg" 
+          onmouseover="show_product_detail(this)">Backlitdoek</a>
+      </li>`;
+
+      ht4 = `<li>
+        <a href="https://vlaggenactie.nl/dibond.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/i/dibond_1.jpeg" 
+          onmouseover="show_product_detail(this)">Dibond</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/mini-beachflag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/m/i/minibeachvlag_0123.jpg" 
+          onmouseover="show_product_detail(this)">Mini Beachflag</a>
+      </li>
+     <li>
+        <a href="https://vlaggenactie.nl/forex.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/f/o/forex_3.jpg" 
+          onmouseover="show_product_detail(this)">Forex</a>
+      </li>`;
+
+      ht5 = `<li>
+        <a href="https://vlaggenactie.nl/banier.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/3/_/3_2.jpg" 
+          onmouseover="show_product_detail(this)">Banier</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/dibond-xl.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/i/dibond_xl_1.jpeg" 
+          onmouseover="show_product_detail(this)">Dibond XL</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/dibond-butler-finish.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/r/e/reclamebord_1_1.jpg" 
+          onmouseover="show_product_detail(this)">Dibond Butler Finish</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/mini-beachflag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/i/dibond_butler_finish_1.jpeg" 
+          onmouseover="show_product_detail(this)">Mini Beachflag</a>
+      </li>
+      `;
+
+      ht += "<div class='col-lg-2'>" + ht1 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht2 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht3 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht4 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht5 + "</div>";
+
+      ht += `<div class='col-lg-2'>
+                              <img loading="lazy" id="img_1" src="https://vlaggenactie.nl/pub/media/catalog/product/3/_/3_2.jpg">
+                              <br>
+                              <br>
+                              <a id="a_1">Binnen Reclame</a>
+                          </div>`;
+
+      document.getElementById("bottom_menu").innerHTML = ht;
+      document.getElementById("bottom_menu").style.display = "block";
+    } else if (category_id == 441) {
+      ht1 = `
+     <li>
+        <a href="https://vlaggenactie.nl/banier.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/3/_/3_2.jpg" 
+          onmouseover="show_product_detail(this)">Banier</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/zwart-wit-banner.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/z/w/zwart-wit-banner-printen.png" onmouseover="show_product_detail(this)">Zwart-wit banner</a>
+      </li>
+        <li>
+      <a href="https://vlaggenactie.nl/beachflags.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/e/beachflag_3.jpg" 
+      	onmouseover="show_product_detail(this)">Beachflags</a>
+    </li>
+    <li>
+      <a href="https://vlaggenactie.nl/mastvlag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/m/a/mastvlaggen_1_1.jpg" 
+      	onmouseover="show_product_detail(this)">Mastvlag</a>
+    </li>
+    <li>
+        <a href="https://vlaggenactie.nl/plexiglas.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/p/l/plexiglas-2-logosuz.jpg" onmouseover="show_product_detail(this)">Plexiglas</a>
+      </li>
+   <li>
+        <a href="https://vlaggenactie.nl/spandoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/s/p/spandoek_5.jpg" onmouseover="show_product_detail(this)">Spandoek</a>
+      </li>
+     
+      
+     `;
+
+      ht2 = `
+      <li>
+      <a href="https://vlaggenactie.nl/gevelvlaggen.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/g/e/gevelvlaggen_1_1.jpg"
+       	onmouseover="show_product_detail(this)">Gevelvlag</a>
+    </li>
+     <li>
+      <a href="https://vlaggenactie.nl/kioskvlag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/k/i/kioskvlaggen_1.jpg"
+       	onmouseover="show_product_detail(this)">Kioskvlag</a>
+    </li>
+    <li>
+        <a href="https://vlaggenactie.nl/aluminium-bord.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/a/l/aluminium_bord_1_1.jpg" 
+          onmouseover="show_product_detail(this)">Aluminium bord</a>
+      </li>
+     <li>
+        <a href="https://vlaggenactie.nl/bouwhekdoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/o/bouwhekdoek_3.jpg" 
+          onmouseover="show_product_detail(this)">Bouwhekdoek</a>
+      </li>
+        <li>
+        <a href="https://vlaggenactie.nl/blind-spandoekframe.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/l/blind_spandoekframe_1_2.jpg" 
+          onmouseover="show_product_detail(this)">Blind spandoekframe</a>
+      </li>
+      <li>
+      <a href="https://vlaggenactie.nl/baniervlag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/a/baniervlag_1_1.jpg" 
+      	onmouseover="show_product_detail(this)">Baniervlag</a>
+    </li>
+      
+      `;
+
+      ht3 = ` <li>
+        <a href="https://vlaggenactie.nl/dibond.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/i/dibond_1.jpeg" 
+          onmouseover="show_product_detail(this)">Dibond</a>
+      </li>
+      
+      <li>
+        <a href="https://vlaggenactie.nl/flag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/h/e/hekwerkbanner_2_1.jpg" onmouseover="show_product_detail(this)">Dranghekdoek</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/backlitdoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/f/l/flagwind_600x400.jpg" 
+          onmouseover="show_product_detail(this)">Flag</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/bouwhekdoek-eigen-formaat.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/o/bouwhekdoek_4_1.jpg" 
+          onmouseover="show_product_detail(this)">Bouwhekdoek (eigen formaat)</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/backlitdoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/a/backlitdoek_1_1.jpeg" 
+          onmouseover="show_product_detail(this)">Backlitdoek</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/autosticker.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/a/u/autosticker_1.jpg" 
+          onmouseover="show_product_detail(this)">Autosticker</a>
+      </li>`;
+
+      ht4 = `<li>
+        <a href="https://vlaggenactie.nl/blackback-soft.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/l/blackback_soft_3_1_.jpg" 
+          onmouseover="show_product_detail(this)">Blackback Soft</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/soundmesh.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/s/o/soundmesh_2_1.jpg"
+           onmouseover="show_product_detail(this)">Soundmesh</a>
+      </li>
+        <li>
+        <a href="https://vlaggenactie.nl/dibond-xl.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/i/dibond_xl_1.jpeg" 
+          onmouseover="show_product_detail(this)">Dibond XL</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/dekostof.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/e/dekostof_6.jpg" 
+          onmouseover="show_product_detail(this)">Dekostof</a>
+      </li>
+     <li>
+        <a href="https://vlaggenactie.nl/forex.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/f/o/forex_3.jpg" 
+          onmouseover="show_product_detail(this)">Forex</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/dibond-butler-finish.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/r/e/reclamebord_1_1.jpg" 
+          onmouseover="show_product_detail(this)">Dibond Butler Finish</a>
+      </li>`;
+
+      ht5 = `<li>
+      <a href="https://vlaggenactie.nl/golfvlag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/g/o/golfvlag_15.jpg" 
+      	onmouseover="show_product_detail(this)">Golfvlag</a>
+    </li>
+     <li>
+      <a href="https://vlaggenactie.nl/vlaggenlijn.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/v/l/vlaggenlijn_2.jpg"
+      	 onmouseover="show_product_detail(this)">Vlaggenlijn</a>
+    </li>
+     <li>
+      <a href="https://vlaggenactie.nl/tarp.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/t/a/tarp_1_2.jpg"
+      	 onmouseover="show_product_detail(this)">Tarp</a>
+    </li>
+     <li>
+        <a href="https://vlaggenactie.nl/reclamebord.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/r/e/reclamebord_1_1.jpg" 
+          onmouseover="show_product_detail(this)">Reclamebord</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/parasol.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/p/a/parasol_1.jpg" 
+          onmouseover="show_product_detail(this)">Parasol</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/outdoor-textielframe.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/o/u/outdoor_textielframe_1_2.jpg" 
+          onmouseover="show_product_detail(this)">Outdoor textielframe</a>
+      </li>
+
+      `;
+
+      ht += "<div class='col-lg-2'>" + ht1 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht2 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht3 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht4 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht5 + "</div>";
+
+      ht += `<div class='col-lg-2'>
+                              <img loading="lazy" id="img_1" src="https://vlaggenactie.nl/pub/media/catalog/product/h/e/hekwerkbanner_2_1.jpg">
+                              <br>
+                              <br>
+                              <a id="a_1">Buiten Reclame</a>
+                          </div>`;
+
+      document.getElementById("bottom_menu").innerHTML = ht;
+      document.getElementById("bottom_menu").style.display = "block";
+    } else if (category_id == 445) {
+      ht1 = `
+        <li>
+        <a href="https://vlaggenactie.nl/naadloos-fotobehang.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/n/a/naadloos_fotobehang_1_1.jpg" onmouseover="show_product_detail(this)">Naadloos fotobehang</a>
+      </li>
+  
+      <li>
+        <a href="https://vlaggenactie.nl/blackback-soft.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/l/blackback_soft_3_1_.jpg" 
+          onmouseover="show_product_detail(this)">Blackback Soft</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/airtex.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/a/i/airtex_1.jpg" 
+          onmouseover="show_product_detail(this)">Airtex</a>
+      </li>
+      
+     `;
+
+      ht2 = `
+    
+        <li>
+        <a href="https://vlaggenactie.nl/textielframe.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/t/e/textielframe_2_1.jpg" 
+          onmouseover="show_product_detail(this)">Textielframe</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/vinyl-sticker.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/v/i/vinyl_sticker_3.jpg" 
+          onmouseover="show_product_detail(this)">Vinyl sticker</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/decotex-uv.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/e/decotex_1.jpg" onmouseover="show_product_detail(this)">Decotex UV</a>
+      </li>
+      
+      `;
+
+      ht3 = `
+        <li>
+        <a href="https://vlaggenactie.nl/plexiglas.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/p/l/plexiglas-2-logosuz.jpg" onmouseover="show_product_detail(this)">Plexiglas</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/behangset-6-delig.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/e/behangset_1.jpg" 
+          onmouseover="show_product_detail(this)">Behangset 6-delig</a>
+      </li>`;
+
+      ht4 = ``;
+
+      ht5 = ``;
+
+      ht += "<div class='col-lg-2'>" + ht1 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht2 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht3 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht4 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht5 + "</div>";
+
+      ht += `<div class='col-lg-2'>
+                              <img loading="lazy" id="img_1" src="https://vlaggenactie.nl/pub/media/catalog/product/n/a/naadloos_fotobehang_1_1.jpg">
+                              <br>
+                              <br>
+                              <a id="a_1">Interrieur</a>
+                          </div>`;
+
+      document.getElementById("bottom_menu").innerHTML = ht;
+      document.getElementById("bottom_menu").style.display = "block";
+    } else if (category_id == 416) {
+      ht1 = `
+       <li>
+        <a href="https://vlaggenactie.nl/flag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/h/e/hekwerkbanner_2_1.jpg" onmouseover="show_product_detail(this)">Dranghekdoek</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/spandoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/s/p/spandoek_5.jpg" onmouseover="show_product_detail(this)">Spandoek</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/bouwhekdoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/o/bouwhekdoek_3.jpg" 
+          onmouseover="show_product_detail(this)">Bouwhekdoek</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/dekostof.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/d/e/dekostof_6.jpg" 
+          onmouseover="show_product_detail(this)">Dekostof</a>
+      </li>
+      
+     `;
+
+      ht2 = `
+        <li>
+        <a href="https://vlaggenactie.nl/airtex.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/a/i/airtex_1.jpg" 
+          onmouseover="show_product_detail(this)">Airtex</a>
+      </li>
+     <li>
+        <a href="https://vlaggenactie.nl/blackback.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/l/blackback_1.jpg" 
+          onmouseover="show_product_detail(this)">Blackback</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/blackback-soft.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/l/blackback_soft_3_1_.jpg" 
+          onmouseover="show_product_detail(this)">Blackback Soft</a>
+      </li>
+      
+      
+      `;
+
+      ht3 = `
+       <li>
+        <a href="https://vlaggenactie.nl/bouwhekdoek-eigen-formaat.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/o/bouwhekdoek_4_1.jpg" 
+          onmouseover="show_product_detail(this)">Bouwhekdoek (eigen formaat)</a>
+      </li>
+     <li>
+        <a href="https://vlaggenactie.nl/backlitdoek.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/a/backlitdoek_1_1.jpeg" 
+          onmouseover="show_product_detail(this)">Backlitdoek</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/banner-510.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/a/banner_510_1.jpg" 
+          onmouseover="show_product_detail(this)">Banner 510</a>
+      </li>`;
+
+      ht4 = `
+       <li>
+        <a href="https://vlaggenactie.nl/zwart-wit-banner.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/z/w/zwart-wit-banner-printen.png" onmouseover="show_product_detail(this)">Zwart-wit banner</a>
+      </li>
+      <li>
+        <a href="https://vlaggenactie.nl/spandoekframe.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/s/p/spandoekframe_2_1.jpg" 
+          onmouseover="show_product_detail(this)">Spandoekframe</a>
+      </li>
+       <li>
+        <a href="https://vlaggenactie.nl/blind-spandoekframe.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/l/blind_spandoekframe_1_2.jpg" 
+          onmouseover="show_product_detail(this)">Blind spandoekframe</a>
+      </li>
+
+      `;
+
+      ht5 = ``;
+
+      ht += "<div class='col-lg-2'>" + ht1 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht2 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht3 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht4 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht5 + "</div>";
+
+      ht += `<div class='col-lg-2'>
+                              <img loading="lazy" id="img_1" src="https://vlaggenactie.nl/pub/media/catalog/product/s/p/spandoek_5.jpg">
+                              <br>
+                              <br>
+                              <a id="a_1">Spandoeken</a>
+                          </div>`;
+
+      document.getElementById("bottom_menu").innerHTML = ht;
+      document.getElementById("bottom_menu").style.display = "block";
+    } else if (category_id == 417) {
+      ht1 = `
+       <li>
+        <a href="https://vlaggenactie.nl/banier.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/3/_/3_2.jpg" 
+          onmouseover="show_product_detail(this)">Banier</a>
+      </li>
+     <li>
+      <a href="https://vlaggenactie.nl/vlaggenmast.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/v/l/vlag_eigenformaat__3.jpg" onmouseover="show_product_detail(this)">Vlaggenmast</a>
+    </li>
+
+   
+      
+     `;
+
+      ht2 = `
+       <li>
+      <a href="https://vlaggenactie.nl/mastvlag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/m/a/mastvlaggen_1_1.jpg" 
+      	onmouseover="show_product_detail(this)">Mastvlag</a>
+    </li>
+    
+    <li>
+      <a href="https://vlaggenactie.nl/baniervlag.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/b/a/baniervlag_1_1.jpg" 
+      	onmouseover="show_product_detail(this)">Baniervlag</a>
+    </li>
+      
+    
+      `;
+
+      ht3 = `
+       <li>
+      <a href="https://vlaggenactie.nl/baniermast.html" data-img="https://vlaggenactie.nl/pub/media/catalog/product/v/l/vlag_eigenformaat__3.jpg" onmouseover="show_product_detail(this)">Baniermast</a>
+    </li>
+      `;
+
+      ht4 = `
+      
+
+      `;
+
+      ht5 = ``;
+
+      ht += "<div class='col-lg-2'>" + ht1 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht2 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht3 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht4 + "</div>";
+      ht += "<div class='col-lg-2'>" + ht5 + "</div>";
+
+      ht += `<div class='col-lg-2'>
+                              <img loading="lazy" id="img_1" src="https://vlaggenactie.nl/pub/media/catalog/product/3/_/3_2.jpg" style="height: 200px;">
+                              <br>
+                              <br>
+                              <a id="a_1">Banieren</a>
+                          </div>`;
 
       document.getElementById("bottom_menu").innerHTML = ht;
       document.getElementById("bottom_menu").style.display = "block";
